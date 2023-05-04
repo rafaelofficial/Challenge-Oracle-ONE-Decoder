@@ -1,0 +1,159 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(#E5E5E5, #0A3871);
+    overflow: hidden;
+}
+
+header {
+    margin: 40px 84px 0;
+}
+
+.title-one-decoder {
+    display: inline-block;
+    margin: 1em;
+    font-size: 38px;
+    font-weight: bold;
+    color: #0A3871;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.caixa-principal {
+    margin: 18px 100px 175px 240px;
+}
+
+.caixa-principal p {
+    margin: 280px 0 10px;
+    font-size: 13px;
+    color: #495057;
+}
+
+.input-decodificador {
+    font-size: 28px;
+    border: none;
+    background: #E5E5E5;
+    margin: 0 25px;
+    padding: 25px;
+    border-radius: 15px;
+    color: #0A3871;
+    outline: 0;
+}
+
+.btn-criptografar {
+    display: inline-block;
+    padding: 1em 4em;
+    margin: 0 15px 0 0;
+    border: none;
+    border-radius: 12px;
+    background: #0A3871;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-decriptografar {
+    display: inline-block;
+    padding: 1em 4em;
+    margin: 0 15px 0 0;
+    border: 1px solid #0A3871;
+    border-radius: 12px;
+    color: #0A3871;
+    font-size: 18px;
+    font-weight: bold;
+    background: #D8DFE8;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-copy {
+    display: relative;
+    padding: 1em 4em;
+    margin: 3.4em 5.7em;
+    border: 1px solid #0A3871;
+    border-radius: 12px;
+    color: #0A3871;
+    font-size: 18px;
+    font-weight: bold;
+    background: #D8DFE8;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 455px;
+    align-items: center;
+}
+
+.btn-criptografar:hover, 
+.btn-decriptografar:hover, 
+.btn-copy:hover {
+    transition: 1s;
+    opacity: 0.7;
+}
+
+::-webkit-input-placeholder {
+    color:#0A3871;
+}
+
+.caixa-textarea {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin: 0 120px;
+}
+
+.input-textarea {
+    margin: 5em;
+    padding: 44px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+
+    background-image: url("/home/rafael/Documents/Projects/Workspaces/Alura/ONE/Challenge-Oracle-ONE-Decoder/img/image-textarea.png");
+    background-repeat: no-repeat;
+    background-position: 25% 25%;
+    background-size: 220px;
+    outline: 0;
+}
+
+footer {
+    text-align: center;
+    background: #0A3871;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    padding: 5.6em 0;
+}
+
+/* Resposividade */
+@media screen and (max-width: 980px) {
+    .caixa-textarea, .caixa-principal {
+        position: relative;
+        margin: 10px 10px auto;
+        width: auto;
+    }
+
+    .caixa-principal p {
+        margin: 280px 38px 10px;
+    }
+
+    .btn-criptografar, .btn-decriptografar {
+        width: 382px;
+        margin: 10px 38px 0;
+
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .caixa-textarea {
+        display: flex;
+        flex-direction: column;
+        padding: 32px;
+
+        width: auto;
+        height: 123px;
+        margin: 10px 38px 38px 0;
+    }
+}
